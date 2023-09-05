@@ -23,8 +23,9 @@ interface newsType{
       thumbnail:{
         contentUrl:string
       }
-    }
-  }[0]
+    },
+    name: string
+  }[]
   description:string
   datePublished:string
 }
@@ -47,14 +48,15 @@ export const News = ({simplified}:propsType) => {
       {!simplified && (
         <Col span={24}>
           <Select
-              showSearch
-              className="select-news"
-              placeholder="Select a Crypto"
-              optionFilterProp="children"
-              onChange={(value)=>setNewsCategory(value)}
-              filterOption={(input,option)=>option?.children?.toLowerCase()?.indexOf(input.toLocaleLowerCase()) >= 0
-              }
-          >
+  showSearch
+  className="select-news"
+  placeholder="Select a Crypto"
+  optionFilterProp="children"
+  onChange={(value) => setNewsCategory(value)}
+  filterOption={(input, option) =>
+    (option?.children as unknown  as string)?.toLowerCase()?.indexOf(input.toLowerCase()) >= 0
+  }
+>
             <Option value="Cryptocurrency">Cryptocurrency</Option>
             {data?.data?.coins.map((coin:optionType)=>(
               <Option value={coin.name}>{coin.name}</Option>

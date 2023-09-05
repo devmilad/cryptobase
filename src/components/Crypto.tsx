@@ -17,7 +17,7 @@ interface currencyType{
 interface propsType{
   simplified: boolean
 }
-export const Crypto = ({simplified}:propsType) => {
+export const Crypto = ({simplified }: propsType) => {
   const count = simplified ? 10 : 100;
   const {data:cryptoList, isFetching } = useGetCryptosQuery(count)
   const [cryptos, setCryptos] = useState<currencyType[]>([])

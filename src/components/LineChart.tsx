@@ -41,6 +41,7 @@ export const LineChart = ({coinHistory,currentPrice, coinName}:chartType) => {
           y: 
             {
               ticks: {
+                //@ts-ignore
                 min: 0
               },
             },
