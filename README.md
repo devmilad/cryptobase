@@ -4,17 +4,17 @@
 
 # 📈 Cryptocurrency Hub 🚀
 
-📊 Real-time prices & charts
-📰 Latest news, categorized by crypto
-🤖 User-friendly interface
-📱 Mobile app for on-the-go
-🔒 Secure portfolios
-📣 Community discussions
-🤝 Responsive support
-🔄 Regular updates
-💰 Monetization options
-📜 Legal compliance
-📣 User feedback
+*📊 Real-time prices & charts
+*📰 Latest news, categorized by crypto
+*🤖 User-friendly interface
+*📱 Mobile app for on-the-go
+*🔒 Secure portfolios
+*📣 Community discussions
+*🤝 Responsive support
+*🔄 Regular updates
+*💰 Monetization options
+*📜 Legal compliance
+*📣 User feedback
 
 # Technology in use
 
