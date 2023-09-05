@@ -65,7 +65,7 @@ export const News = ({simplified}:propsType) => {
         </Col>
       )}
 
-        {cryptoNews?.value?.map((news:newsType , i:number)=>(
+        {cryptoNews?.value?.map((news:newsType )=>(
           <Col xs={24} sm={12} lg={8} className="news-card" key={1}>
             <Card className="news-card" hoverable >
             <a href={news.url} target="_blank" rel="noreferrer">
